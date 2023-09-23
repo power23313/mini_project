@@ -31,3 +31,55 @@ header {
   /*margin-right: 120px;*/
   /*width: 513px/*/
 }
+
+#header_top {
+  height: 50px;
+  width: 100vw;
+  border-top: #EC8403E5 solid 4px;
+}
+
+#header_top > div:first-child {
+  /*background-color: #EC8403E5;*/
+  width: calc(100% - 550px);
+  border-bottom: 46px solid transparent;
+  border-right: 46px solid #EC8403E5;
+}
+
+#header_top > div:nth-child(2) {
+  display: inline-block;
+  width: 5px;
+  height: 46px;
+  transform: skewX(45deg);
+  background-color: #00a6dc;
+  right: 25px
+}
+
+#header_top > div:last-child {
+  background-color: #EC8403E5;
+  width: 550px;
+  margin-left: -5px;
+}
+#header_top label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+#top_contact {
+  margin-right: 120px;
+}
+
+#top_contact > * {
+  margin-right: 30px
+}
+
+#search {
+  width: 16px;
+  height: 16px;
+}
+
+#rectangle {
+  width: 1px;
+  height: 16px;
+  background-color: #FFFFFF;
+}
