@@ -2,3 +2,32 @@ header {
   height: 130px;
   background-color: #333F48;
 }
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar-nav li:not(:last-child) {
+  margin-right: 60px;
+}
+
+#left_container img {
+  width: 190px;
+  height: 92px;
+}
+
+#right_container,
+#navbar_toggle {
+  margin-top: 50px;
+}
+
+#header_bottom ul {
+  /*margin-right: 120px;*/
+  /*width: 513px/*/
+}
