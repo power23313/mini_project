@@ -1,10 +1,14 @@
+* {
+  font-family: 'Open Sans', serif;
+}
+
 header {
   height: 130px;
   background-color: #333F48;
 }
 
 .container-fluid {
-  max-width: 1200px;
+  max-width: 1224px;
 }
 
 .navbar-nav .nav-link {
@@ -82,4 +86,69 @@ header {
   width: 1px;
   height: 16px;
   background-color: #FFFFFF;
+}
+
+#main_banner {
+  height: 600px;
+  background: url(../image/sea.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#banner_text_container {
+  top: 290px;
+}
+
+#banner_text_container > span {
+  color: #173045;
+}
+
+#banner_first_text {
+  font-size: 29px;
+  font-weight: 600;
+}
+
+#banner_second_text {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+#banner_intro_container {
+  width: 410px;
+  height: 476px;
+  background-color: #EC8403;
+  margin-top: 62px;
+}
+
+#banner_intro {
+  width: 290px;
+  height: 315px;
+  padding: 40px 60px 0 60px;
+}
+
+#banner_intro > span {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 63px;
+  color: #FFFFFF;
+  display: inline-block;
+  width: 290px;
+}
+
+#banner_intro > div {
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 172px;
+  height: 51px;
+  color: #FFFFFF;
+  background-color: #EC8403;
+  border: #FFFFFF 2px solid;
+  margin-top: 30px;
+  text-align: left;
+  padding: 0 16px 0 24px;
+}
+
+#banner_intro > div > img {
+  background-size: 18px 18px;
+  padding-left: 10px;
 }
