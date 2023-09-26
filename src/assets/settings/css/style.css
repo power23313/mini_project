@@ -193,3 +193,87 @@ header {
   /* background-size: 16px 16px; */
   margin-left: 10px;
 }
+
+#offer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: #F2F2F2;
+}
+
+#offer > div > span {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#offer .row .card {
+  max-width: 268px;
+  min-height: 330px;
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: 0;
+}
+
+#offer .card-body {
+  padding: 30px 24px 30px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  border-radius: 0;
+}
+
+.service_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service_top > span {
+  font-size: 18px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.service_top > p,
+.service_top > span,
+.service_bottom > span {
+  color: #333F48;
+}
+
+.service_bottom {
+  width: 152px;
+  height: 42px;
+  border: #EC8403 1px solid;
+  padding-left: 20px;
+}
+
+.service_bottom > img {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  content: url(../image/caret_right_orange.svg);
+}
+
+#offer .row .card:hover {
+  background-color: #333F48;
+}
+
+#offer .row .card:hover .service_top > p,
+#offer .row .card:hover .service_top > span,
+#offer .row .card:hover .service_bottom > span {
+  color: #FFFFFF;
+}
+
+#offer .row .card:hover .service_bottom {
+  border: none;
+  background-color: #EC8403;
+}
+
+#offer .row .card:hover .service_bottom > img {
+  content: url(../image/caret_right.svg);
+}
+
+#offer .row .card:hover .service_top > svg > path {
+  fill: #FFFFFF;
+}
