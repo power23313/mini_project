@@ -200,9 +200,11 @@ header {
   background-color: #F2F2F2;
 }
 
-#offer > div > span {
+#offer > div > span,
+#article > div > span {
   font-size: 36px;
   font-weight: 700;
+  color: #333F48;
 }
 
 #offer .row .card {
@@ -276,4 +278,155 @@ header {
 
 #offer .row .card:hover .service_top > svg > path {
   fill: #FFFFFF;
+}
+
+#article {
+  height: 955px;
+  margin-top: 60px;
+}
+
+#article .row {
+  margin-top: 40px;
+}
+
+#article .row:first-of-type .card-body {
+  padding: 30px 30px 60px 0;
+}
+
+#article .row:not(:first-of-type) .col {
+  padding: 0 30px;
+}
+
+#article .col .card-body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+#article .row .card {
+  border: 0;
+  border-radius: 0;
+}
+
+#article .row:first-of-type .card {
+  min-height: 310px;
+  background-color: #F2F2F2;
+}
+
+#article .row:first-of-type .card > img {
+  width: 340px;
+  height: 250px;
+  margin: 0 40px;
+}
+
+#article .row:first-of-type .date {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333F48;
+  margin-bottom: 16px;
+}
+
+#article .row:first-of-type .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333F48;
+  margin-bottom: 16px;
+}
+
+#article .row:first-of-type p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333F48;
+  line-height: 30px;
+}
+
+#article .row:first-of-type .card .card-mask {
+  position: absolute;
+  width: 340px;
+  height: 250px;
+  left: 40px
+}
+
+#article .card .card-mask {
+  background-color: #333F48B2;
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  opacity: 0;
+  text-decoration: none;
+}
+
+#article .card .card-mask span {
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+#article .card:hover .card-mask {
+  opacity: 1;
+}
+
+#article .card:hover .card-body span,
+#article .card:hover .card-body p {
+  color: #333F4999;
+}
+
+#article .row:not(:first-of-type) .card {
+  box-shadow: 0 4px 20px 0 #0000001A;
+}
+
+#article .row:not(:first-of-type) .card > img {
+  width: 100%;
+  height: 180px;
+}
+
+#article .row:not(:first-of-type) .date {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #333F48;
+  margin-bottom: 14px;
+}
+
+#article .row:not(:first-of-type) .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333F48;
+  width: 300px;
+  height: 60px;
+  margin-bottom: 14px;
+}
+
+#article .row:not(:first-of-type) p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333F4999;
+  width: 300px;
+  height: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+#article_bottom {
+  width: 144px;
+  height: 42px;
+  margin-top: 48px;
+  padding-left: 20px;
+}
+
+#article_bottom {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333F48;
+  border: #EC8403 1px solid;
+}
+
+#article_bottom > img {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  content: url(../image/caret_right_orange.svg);
 }
