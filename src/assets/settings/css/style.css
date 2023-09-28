@@ -430,3 +430,99 @@ header {
   margin-left: 6px;
   content: url(../image/caret_right_orange.svg);
 }
+
+#testimonials {
+  margin-top: 60px;
+  margin-bottom: 84px;
+}
+
+#testimonials .col:first-of-type > span {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: #333F48;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+#testimonials .col:first-of-type > p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333F48;
+  width: 300px;
+  height: 90px;
+}
+
+#testimonials .carousel-inner {
+  box-shadow: 10px 10px 0 0 #EC8403;
+}
+
+#testimonials .carousel-inner > div {
+  padding: 40px 40px 0 40px;
+}
+
+#testimonials .carousel-indicators {
+  margin: 0 40px 20px 0;
+}
+
+#testimonials .carousel-indicators button {
+  border: 0;
+  border-radius: 100%;
+  margin: 0 5px;
+}
+
+#testimonials .carousel-indicators button.active {
+  background-color: #EC8403;
+  width: 10px;
+  height: 10px;
+}
+
+#testimonials .carousel-indicators button:not(.active) {
+  background-color: #FFFFFF;
+  opacity: 1;
+  border: #333F48 1px solid;
+  width: 9px;
+  height: 9px;
+}
+
+#testimonials .carousel-inner {
+  width: 840px;
+  height: 394px;
+}
+
+#testimonials .carousel-item {
+  height: 100%;
+}
+
+#testimonials .carousel-inner .carousel-item p {
+  color: #FFFFFF;
+  margin-top: 20px;
+  font-size: 16px;
+  height: 192px;
+  font-weight: 400;
+}
+
+#testimonials .carousel-inner .carousel-item span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+#carousel > button {
+  display: none;
+}
+
+#first_carousel {
+  background-color: #333F48;
+}
+
+#second_carousel {
+  background-color: gray;
+}
+
+#third_carousel {
+  background-color: seagreen;
+}
