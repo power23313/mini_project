@@ -615,3 +615,15 @@ header {
   width: 26px;
   height: 26px;
 }
+
+#footer {
+  background-color: #EC8403;
+  color: #FFFFFF;
+  height: 50px;
+}
+
+#footer .row div:first-child span:not(:last-child):after {
+  content: '|';
+  margin: 0 10px;
+  display: inline-block;
+}
