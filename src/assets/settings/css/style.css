@@ -201,7 +201,8 @@ header {
 }
 
 #offer > div > span,
-#article > div > span {
+#article > div > span,
+#contact > div > span {
   font-size: 36px;
   font-weight: 700;
   color: #333F48;
@@ -525,4 +526,42 @@ header {
 
 #third_carousel {
   background-color: seagreen;
+}
+
+#contact form {
+  margin-top: 63px;
+  width: 810px;
+}
+
+#contact form .row {
+  margin-bottom: 40px;
+}
+
+#contact form label[class="form-check-label"] {
+  white-space: nowrap;
+}
+
+#contact form button[type="submit"] {
+  width: 200px;
+  height: 70px;
+  background-color: #EC8403;
+  border-radius: 0;
+  border: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#contact form button[type="submit"] img {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+#type_advice span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#gender .form-check-inline {
+  width: 96px
 }
