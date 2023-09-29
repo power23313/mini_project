@@ -565,3 +565,53 @@ header {
 #gender .form-check-inline {
   width: 96px
 }
+
+#contact_intro {
+  background-color: #333F48;
+}
+
+#contact_intro .row {
+  min-height: 363px;
+  background-color: #333F48;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+#contact_intro .row div:last-child {
+  color: #FFFFFF;
+  width: auto;
+}
+
+#contact_intro .row p {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#contact_intro .row p {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#contact_title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+#contact_content {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+#contact_content > * {
+  margin-bottom: 10px;
+}
+
+#linkin {
+  width: 26px;
+  height: 26px;
+}
