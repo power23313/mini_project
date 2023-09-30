@@ -8,7 +8,7 @@ header {
 }
 
 .container-fluid {
-  max-width: 1224px;
+  max-width: 1200px;
 }
 
 .navbar {
@@ -91,43 +91,53 @@ header {
 
 #main_banner {
   height: 600px;
-  background: url(../image/sea.jpg);
+  background: url(../image/mountain.jpg);
   background-size: cover;
-  position: relative;
 }
 
-#banner_text_container {
-  top: 290px;
+#main_banner .container-fluid {
+  height: 100%;
 }
 
-#banner_text_container > span {
+#main_banner .row {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.banner-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-text-container > span {
   color: #173045;
+  font-weight: 600;
 }
 
-#banner_first_text {
+.banner-text-container > span:first-child {
   font-size: 29px;
-  font-weight: 600;
 }
 
-#banner_second_text {
+.banner-text-container > span:last-child {
   font-size: 70px;
-  font-weight: 600;
 }
 
-#banner_intro_container {
+.banner-intro-container {
+  display: flex;
+  justify-content: end;
+}
+
+.banner-intro {
+  display: flex;
+  flex-direction: column;
+  background-color: #EC8403;
   width: 410px;
   height: 476px;
-  background-color: #EC8403;
-  margin-top: 62px;
+  padding: 40px 60px 0 60px; 
 }
 
-#banner_intro {
-  width: 290px;
-  height: 315px;
-  padding: 40px 60px 0 60px;
-}
-
-#banner_intro > span {
+.banner-intro > span {
   font-size: 46px;
   font-weight: 600;
   line-height: 63px;
@@ -136,7 +146,7 @@ header {
   width: 290px;
 }
 
-#banner_intro > div {
+.banner-intro > div {
   font-size: 20px;
   font-weight: 600;
   max-width: 172px;
@@ -149,7 +159,7 @@ header {
   padding: 0 16px 0 24px;
 }
 
-#banner_intro > div > img {
+.banner-intro > div > img {
   background-size: 18px 18px;
   padding-left: 10px;
 }
@@ -629,14 +639,39 @@ header {
   display: inline-block;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
+  .container-fluid {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 991px) {
   .navbar-brand img {
     display: none;
+  }
+
+  .container-fluid {
+    max-width: 800px;
   }
 }
 
 @media screen and (min-width: 992px) {
   #right_container {
     margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .banner-text-container > span:first-child {
+    font-size: 20px;
+  }
+  
+  .banner-text-container > span:last-child {
+    font-size: 60px;
+  }
+
+  #main_banner .row > div {
+    align-items: center;
+    justify-content: center;
   }
 }
