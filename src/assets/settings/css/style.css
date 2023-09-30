@@ -168,40 +168,39 @@ header {
   margin: 60px 0;
 }
 
-#about_title {
+.about-title {
   color: #333F48;
   font-weight: 700;
   font-size: 40px;
 }
 
-#about_text p,
-#about_text span {
+.about-text p,
+.about-text span {
   font-size: 18px;
   color: #333F48;
 }
 
-#about_text p {
+.about-text p {
   font-weight: 400;
 }
 
-#about_text span {
+.about-text span {
   font-weight: 600;
 }
 
-#about_text > div {
+.about-text > div {
   margin-top: 20px;
 }
 
-#about_text > div > span {
+.about-text > div > span {
   font-size: 16px;
   font-weight: 600;
   color: #EC8403;
 }
 
-#about_text > div > img {
+.about-text > div > img {
   width: 16px;
   height: 16px;
-  /* background-size: 16px 16px; */
   margin-left: 10px;
 }
 
@@ -673,5 +672,9 @@ header {
   #main_banner .row > div {
     align-items: center;
     justify-content: center;
+  }
+
+  #about .row {
+    padding: 0 2em
   }
 }
