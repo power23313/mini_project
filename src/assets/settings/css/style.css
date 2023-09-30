@@ -11,8 +11,15 @@ header {
   max-width: 1224px;
 }
 
+.navbar {
+  z-index: 1;
+}
+.navbar .container-fluid {
+  background-color: #333F48;
+}
+
 .navbar-nav .nav-link {
-  color: black;
+  color: #FFFFFF;
   font-size: 18px;
   font-weight: 600;
 }
@@ -21,19 +28,13 @@ header {
   margin-right: 60px;
 }
 
-#left_container img {
+.navbar-brand img {
   width: 190px;
   height: 92px;
 }
 
-#right_container,
-#navbar_toggle {
+.navbar-toggler {
   margin-top: 50px;
-}
-
-#header_bottom ul {
-  /*margin-right: 120px;*/
-  /*width: 513px/*/
 }
 
 #header_top {
@@ -626,4 +627,16 @@ header {
   content: '|';
   margin: 0 10px;
   display: inline-block;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-brand img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #right_container {
+    margin-top: 50px;
+  }
 }
