@@ -526,7 +526,7 @@ header {
 
 #contact form {
   margin-top: 63px;
-  width: 810px;
+  /* width: 810px; */
 }
 
 #contact form .row {
@@ -551,11 +551,6 @@ header {
   width: 16px;
   height: 16px;
   margin-left: 8px;
-}
-
-#type_advice span {
-  font-size: 16px;
-  font-weight: 600;
 }
 
 #gender .form-check-inline {
@@ -605,6 +600,77 @@ header {
 
 #contact_content > * {
   margin-bottom: 10px;
+}
+
+#form_message {
+  border: 1px solid #9B9B9B;
+  border-radius: 0;
+}
+
+.form-second .form-floating input {
+  border-bottom: 1px solid #333333;  
+  border-top:0px;  
+  border-left:0px;  
+  border-right:0px;
+  border-radius: 0;
+  max-width: 360px;
+  padding-bottom: 0 !important;
+}
+
+.form-second .form-floating label {
+  color: #9B9B9B;
+  font-size: 14px;
+}
+
+
+.form-second .form-floating input:focus~label,
+.form-second .form-floating input:not(:placeholder-shown)~label {
+  color: #333333;
+  font-size: 16px;
+}
+
+.form-second .form-floating input:focus {
+  box-shadow: none;
+  border-color: #333333;
+}
+
+#contact .form-third span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#contact .form-third input {
+  border: 2px solid #333333;
+  border-radius: 2px;
+}
+
+#contact .form-fourth > div {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+#contact .form-fourth label {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  margin-left: 24px;
+  padding: 0 4px;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  color: #46454F;
+}
+
+#contact .form-fourth input,
+#contact .form-fourth select {
+  border-radius: 4px;
+  height: 56px;
+
+}
+
+#form_save_already::before {
+  content: "$";
+  color: #333333;
 }
 
 #linkin {
