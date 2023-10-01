@@ -252,7 +252,7 @@ header {
   background-color: #FFFFFF;
   border: 0;
   border-radius: 0;
-  height: 100;
+  height: 100%;
 }
 
 #offer .card-body {
@@ -284,7 +284,7 @@ header {
 }
 
 .service_bottom {
-  width: 152px;
+  width: 170px;
   height: 42px;
   border: #EC8403 1px solid;
   padding-left: 20px;
@@ -398,7 +398,6 @@ header {
   font-size: 20px;
   font-weight: 600;
   color: #333F48;
-  height: 60px;
   margin-bottom: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -411,7 +410,6 @@ header {
   font-size: 16px;
   font-weight: 400;
   color: #333F4999;
-  height: 72px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -569,6 +567,10 @@ header {
 
 #gender .form-check-inline {
   width: 96px
+}
+
+#gender input {
+  border: 2px solid #49454F;
 }
 
 #contact_intro {
@@ -770,6 +772,7 @@ header {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 16px;
+    -webkit-line-clamp: 1;
   }
   
   #article .row > div:first-of-type p {
@@ -777,6 +780,7 @@ header {
     font-weight: 400;
     color: #333F48;
     line-height: 30px;
+    -webkit-line-clamp: 4;
   }
   
   #article .row > div:first-of-type .card .card-mask {
