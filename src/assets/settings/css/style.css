@@ -708,6 +708,24 @@ header {
   display: inline-block;
 }
 
+#go_to_top {
+  display: none;
+  position: fixed;
+  color: #EC8403;
+  padding: 15px;
+  z-index: 99;
+  right: 20px;
+  bottom: 40px;
+  border: 0;
+  border-radius: 30px;
+  background-color: #333F48;
+  opacity: 0.8;
+}
+
+#go_to_top:hover {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 1200px) {
   .container-fluid {
     max-width: 1000px;
