@@ -193,6 +193,7 @@ header {
   margin-top: 30px;
   text-align: left;
   padding: 0 16px 0 24px;
+  cursor: pointer;
 }
 
 .banner-intro > div > svg {
@@ -233,6 +234,7 @@ header {
   font-size: 16px;
   font-weight: 600;
   color: #EC8403;
+  cursor: pointer;
 }
 
 .about-text > div > svg,
@@ -287,6 +289,7 @@ header {
   align-items: center;
   border: 0;
   border-radius: 0;
+  cursor: pointer;
 }
 
 .service-top {
@@ -393,6 +396,7 @@ header {
 #article .row .card {
   box-shadow: 0 4px 20px 0 #0000001A;
   height: 100%;
+  cursor: pointer;
 }
 
 #article .row .card img {
@@ -436,13 +440,11 @@ header {
   height: 42px;
   margin-top: 48px;
   padding-left: 20px;
-}
-
-#article_bottom {
   font-size: 16px;
   font-weight: 600;
   color: #333F48;
   border: #EC8403 1px solid;
+  cursor: pointer;
 }
 
 #testimonials {
