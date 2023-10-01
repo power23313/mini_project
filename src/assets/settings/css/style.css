@@ -682,11 +682,25 @@ header {
   color: #46454F;
 }
 
+#contact .form-fourth span {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  margin-left: 24px;
+  padding: 0 4px;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  color: #46454F;
+}
+
 #contact .form-fourth input,
 #contact .form-fourth select {
   border-radius: 4px;
   height: 56px;
+}
 
+#contact .form-fourth input {
+  padding-left: 32px;
 }
 
 #form_save_already::before {
