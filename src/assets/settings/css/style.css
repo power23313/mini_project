@@ -3,7 +3,6 @@
 }
 
 header {
-  height: 130px;
   background-color: #333F48;
 }
 
@@ -19,10 +18,6 @@ header {
   background-color: #333F48;
   width: 100%;
   padding-bottom: 5px;
-  /* display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between; */
 }
 
 .navbar-nav .nav-link {
@@ -85,8 +80,6 @@ header {
   height: 50px;
   z-index: 3;
   align-items: center;
-  /* position: absolute;
-  width: 100%; */
 }
 
 .top-contact label:first-of-type::after {
@@ -174,8 +167,9 @@ header {
   padding: 0 16px 0 24px;
 }
 
-.banner-intro > div > img {
-  background-size: 18px 18px;
+.banner-intro > div > svg {
+  width: 18px;
+  height: 18px;
   padding-left: 10px;
 }
 
@@ -213,7 +207,9 @@ header {
   color: #EC8403;
 }
 
-.about-text > div > img {
+.about-text > div > svg,
+#article_bottom > svg,
+.service_bottom > svg {
   width: 16px;
   height: 16px;
   margin-left: 10px;
@@ -290,13 +286,6 @@ header {
   padding-left: 20px;
 }
 
-.service_bottom > img {
-  width: 16px;
-  height: 16px;
-  margin-left: 10px;
-  content: url(../image/caret_right_orange.svg);
-}
-
 #offer .row .card:hover {
   background-color: #333F48;
 }
@@ -312,11 +301,8 @@ header {
   background-color: #EC8403;
 }
 
-#offer .row .card:hover .service_bottom > img {
-  content: url(../image/caret_right.svg);
-}
-
-#offer .row .card:hover .service-top > svg > path {
+#offer .row .card:hover .service-top > svg > path,
+#offer .row .card:hover .service_bottom > svg > path {
   fill: #FFFFFF;
 }
 
@@ -431,13 +417,6 @@ header {
   border: #EC8403 1px solid;
 }
 
-#article_bottom > img {
-  width: 14px;
-  height: 14px;
-  margin-left: 6px;
-  content: url(../image/caret_right_orange.svg);
-}
-
 #testimonials {
   margin-top: 60px;
   margin-bottom: 84px;
@@ -466,10 +445,6 @@ header {
 
 #testimonials .carousel-inner > div {
   padding: 40px 40px 0 40px;
-}
-
-#testimonials .carousel-indicators {
-  /* margin: 0 40px 20px 0; */
 }
 
 #testimonials .carousel-indicators button {
