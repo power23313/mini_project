@@ -680,7 +680,6 @@ header {
 #footer {
   background-color: #EC8403;
   color: #FFFFFF;
-  height: 50px;
 }
 
 #footer .row div:first-child span:not(:last-child):after {
