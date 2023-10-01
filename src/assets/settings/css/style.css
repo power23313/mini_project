@@ -4,6 +4,9 @@
 
 header {
   background-color: #333F48;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 .container-fluid {
@@ -92,7 +95,8 @@ header {
   margin-right: 30px
 }
 
-#search {
+#search,
+.form_submit {
   width: 16px;
   height: 16px;
 }
