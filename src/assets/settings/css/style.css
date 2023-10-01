@@ -7,6 +7,25 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #EC8403;
+  border-radius: 3px;
+}
+
 header {
   background-color: #333F48;
   position: sticky;
