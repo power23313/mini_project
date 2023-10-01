@@ -430,7 +430,7 @@ header {
   margin-bottom: 84px;
 }
 
-#testimonials .col:first-of-type > span {
+#testimonials .row > div:first-of-type > span {
   font-weight: 700;
   font-size: 36px;
   line-height: 54px;
@@ -439,12 +439,11 @@ header {
   display: inline-block;
 }
 
-#testimonials .col:first-of-type > p {
+#testimonials .row > div:first-of-type > p {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
   color: #333F48;
-  width: 300px;
   height: 90px;
 }
 
@@ -457,7 +456,7 @@ header {
 }
 
 #testimonials .carousel-indicators {
-  margin: 0 40px 20px 0;
+  /* margin: 0 40px 20px 0; */
 }
 
 #testimonials .carousel-indicators button {
@@ -480,8 +479,7 @@ header {
   height: 9px;
 }
 
-#testimonials .carousel-inner {
-  width: 840px;
+#testimonials .carousel-inner {  
   height: 394px;
 }
 
@@ -492,16 +490,21 @@ header {
 #testimonials .carousel-inner .carousel-item p {
   color: #FFFFFF;
   margin-top: 20px;
+  margin-bottom: 30px;
   font-size: 16px;
   height: 192px;
   font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
 }
 
 #testimonials .carousel-inner .carousel-item span {
   font-size: 16px;
   font-weight: 600;
   color: #FFFFFF;
-  margin-top: 30px;
   display: inline-block;
 }
 
