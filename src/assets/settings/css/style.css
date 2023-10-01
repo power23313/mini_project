@@ -2,6 +2,11 @@
   font-family: 'Open Sans', serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: #333F48;
   position: sticky;
