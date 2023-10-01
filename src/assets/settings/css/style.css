@@ -9,7 +9,7 @@ body {
 
 body {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -724,6 +724,31 @@ header {
 
 #go_to_top:hover {
   opacity: 0.5;
+}
+
+.loading-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.loading-mask-over {
+  opacity: 0;
+}
+
+.loading-mask .progress {
+  margin-top: 25px;
+  width: 50vw;
 }
 
 @media screen and (max-width: 1200px) {
