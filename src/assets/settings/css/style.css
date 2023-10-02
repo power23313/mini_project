@@ -2,6 +2,10 @@
   font-family: 'Open Sans', serif;
 }
 
+*:hover {
+  transition: .3s ease;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -575,8 +579,16 @@ header {
   background-color: seagreen;
 }
 
+#contact {
+  margin-bottom: 80px;
+}
+
 #contact form {
   margin-top: 63px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
+  padding: 60px;
+  border-radius: 30px;
 }
 
 #contact form .row {
@@ -597,6 +609,10 @@ header {
   font-weight: 600;
 }
 
+#contact form button[type="submit"]:hover {
+  background-color: #333F48;
+}
+
 #contact form button[type="submit"] img {
   width: 16px;
   height: 16px;
@@ -604,7 +620,7 @@ header {
 }
 
 #gender .form-check-inline {
-  width: 96px
+  min-width: 90px;
 }
 
 #gender input {
@@ -661,6 +677,10 @@ header {
   border-radius: 0;
 }
 
+.form-second .form-floating {
+  margin-bottom: 40px;
+}
+
 .form-second .form-floating input {
   border-bottom: 1px solid #333333;
   border-top:0px;
@@ -686,6 +706,10 @@ header {
 .form-second .form-floating input:focus {
   box-shadow: none;
   border-color: #333333;
+}
+
+.form-third .col {
+  margin-bottom: 20px;
 }
 
 #contact .form-third span {
@@ -914,6 +938,11 @@ header {
   .row {
     padding: 0 2em;
   }
+
+  #contact form {
+    padding: 40px;
+    width: 90%;
+  }
 }
 
 
@@ -924,5 +953,9 @@ header {
 
   .top-contact label:first-of-type::after {
     display:none
+  }
+
+  #contact form {
+    padding: 40px 20px;
   }
 }
