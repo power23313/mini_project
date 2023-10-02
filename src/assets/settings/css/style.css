@@ -219,6 +219,10 @@ header {
   padding-left: 10px;
 }
 
+.banner-intro > div:hover {
+  background-color: #333F48;
+}
+
 #about {
   margin: 60px 0;
 }
@@ -815,6 +819,14 @@ header {
     justify-content: space-between;
     width: 100%;
   }
+
+  .banner-intro > span {
+    font-size: 32px;
+  }
+
+  .banner-intro {
+    padding: 24px 32px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -882,14 +894,6 @@ header {
 
   .banner-text-container > span:last-child {
     font-size: 60px;
-  }
-
-  .banner-intro > span {
-    font-size: 32px;
-  }
-
-  .banner-intro {
-    padding: 24px 32px;
   }
 
   #main_banner .row > div {
