@@ -53,6 +53,10 @@ header {
   font-weight: 600;
 }
 
+.navbar-nav .nav-link:hover {
+  color: #EC8403;
+}
+
 .navbar-nav li:not(:last-child) {
   margin-right: 60px;
 }
@@ -60,6 +64,10 @@ header {
 .navbar-brand img {
   width: 190px;
   height: 92px;
+}
+
+.navbar-toggler {
+  background-color: #FFFFFF;
 }
 
 #header_top {
@@ -94,7 +102,12 @@ header {
   position: relative;
 }
 
-.top-contact label,
+.top-contact a,
+.top-contact-sm a {
+  text-decoration: none;
+}
+
+.top-contact a,
 .top-contact-sm {
   font-size: 16px;
   font-weight: 600;
@@ -109,7 +122,12 @@ header {
   align-items: center;
 }
 
-.top-contact label:first-of-type::after {
+.top-contact a:hover,
+.top-contact-sm a:hover {
+  text-decoration: underline;
+}
+
+.top-contact a:first-of-type::after {
   content: '|';
   margin-left: 30px;
   display: inline-block;
@@ -891,6 +909,6 @@ header {
   }
 
   .top-contact label:first-of-type::after {
-    margin-left: 15px;
+    display:none
   }
 }
