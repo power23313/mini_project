@@ -468,6 +468,16 @@ header {
   cursor: pointer;
 }
 
+#article_bottom:hover {
+  background-color: #333F48;
+  color: #FFFFFF;
+  border: 0;
+}
+
+#article_bottom:hover > svg > path {
+  fill: #FFFFFF;
+}
+
 #testimonials {
   margin-top: 60px;
   margin-bottom: 84px;
