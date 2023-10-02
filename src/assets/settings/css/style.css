@@ -126,7 +126,7 @@ header {
 }
 
 #main_banner {
-  height: 600px;
+  min-height: 600px;
   background: url(../image/mountain.jpg);
   background-size: cover;
 }
@@ -139,6 +139,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding: 4rem;
 }
 
 .banner-text-container {
@@ -168,9 +169,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #EC8403;
-  width: 410px;
-  height: 476px;
-  padding: 40px 60px 0 60px; 
+  padding: 40px 60px;
 }
 
 .banner-intro > span {
@@ -179,7 +178,7 @@ header {
   line-height: 63px;
   color: #FFFFFF;
   display: inline-block;
-  width: 290px;
+  max-width: 290px;
 }
 
 .banner-intro > div {
@@ -467,6 +466,8 @@ header {
   line-height: 30px;
   color: #333F48;
   height: 90px;
+
+
 }
 
 #testimonials .carousel-inner {
@@ -497,7 +498,7 @@ header {
   height: 9px;
 }
 
-#testimonials .carousel-inner {  
+#testimonials .carousel-inner {
   height: 394px;
 }
 
@@ -629,9 +630,9 @@ header {
 }
 
 .form-second .form-floating input {
-  border-bottom: 1px solid #333333;  
-  border-top:0px;  
-  border-left:0px;  
+  border-bottom: 1px solid #333333;
+  border-top:0px;
+  border-left:0px;
   border-right:0px;
   border-radius: 0;
   max-width: 360px;
@@ -814,7 +815,7 @@ header {
      position: relative;
      width: 340px;
   }
-  
+
   #article .row > div:first-of-type .card-body {
     padding: 0 0 0 40px;
   }
@@ -823,20 +824,20 @@ header {
     width: 340px;
     height: 250px;
   }
-  
+
   #article .row > div:first-of-type .date {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 16px;
   }
-  
+
   #article .row > div:first-of-type .title {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 16px;
     -webkit-line-clamp: 1;
   }
-  
+
   #article .row > div:first-of-type p {
     font-size: 20px;
     font-weight: 400;
@@ -844,7 +845,7 @@ header {
     line-height: 30px;
     -webkit-line-clamp: 4;
   }
-  
+
   #article .row > div:first-of-type .card .card-mask {
     position: absolute;
     width: 100%;
@@ -860,9 +861,17 @@ header {
   .banner-text-container > span:first-child {
     font-size: 20px;
   }
-  
+
   .banner-text-container > span:last-child {
     font-size: 60px;
+  }
+
+  .banner-intro > span {
+    font-size: 32px;
+  }
+
+  .banner-intro {
+    padding: 24px 32px;
   }
 
   #main_banner .row > div {
@@ -872,5 +881,16 @@ header {
 
   .row {
     padding: 0 2em;
+  }
+}
+
+
+@media screen and (max-width: 577px) {
+  .top-contact > * {
+    margin-right: 15px;
+  }
+
+  .top-contact label:first-of-type::after {
+    margin-left: 15px;
   }
 }

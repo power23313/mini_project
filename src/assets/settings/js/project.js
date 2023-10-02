@@ -1,7 +1,7 @@
 function ready() {
-    const totalTime = 3000; 
-    const incrementAmount = 1; 
-    const totalIncrements = 100; 
+    const totalTime = 3000;
+    const incrementAmount = 1;
+    const totalIncrements = 100;
     const incrementInterval = totalTime / totalIncrements;
     let progressWidth = $('.progress').width() / 100;
 
@@ -12,7 +12,7 @@ function ready() {
         if (currentNumber < 100) {
             currentNumber += incrementAmount;
             $('.progress-bar').text(currentNumber + '%');
-            
+
             $('.progress-bar').width(progressWidth * currentNumber);
             timer = setTimeout(incrementNumber, incrementInterval);
         } else {
@@ -40,7 +40,7 @@ $(document).ready(function() {
             topButton.hide();
         }
     });
-    
+
     topButton.click((e) => {
         e.preventDefault();
         $('html').animate(
